@@ -20,8 +20,8 @@ const Seating = ({
   timeAndDate = "Tomorrow, 12 Mar, 10:30 AM",
   type1 = "SILVER",
   type2 = "Premium",
-  ticketPrice1 = 250,
-  ticketPrice2 = 100,
+  ticketPrice1 = 200,
+  ticketPrice2 = 150
 }) => {
     const Navigate = useNavigate()
 
