@@ -14,8 +14,13 @@ export const Section1 = () => {
         <div className="stitle"><h3>Recommended movies</h3><Link className="link" to=""><p>See All</p></Link></div>
         {data.map((e) => {
             return (
-                <div className="simgdiv" key={e._id}><Link className="link" to={`/movies/${e._id}`}><img src={e.cover_image_url}></img><h5>{e.movie_name}</h5><p>{ e.languages}</p></Link></div>
-                
+                <div className="simgdiv" key={e.id}>
+                    <Link className="link" to={`/movies/${e.id}`}>
+                        <img src={e.cover_image_url}></img>
+                        <h5>{e.movie_name}</h5>
+                        <p>{ e.languages}</p>
+                    </Link>
+                </div> 
             )
         })}
         
