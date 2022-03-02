@@ -25,5 +25,4 @@ const Card = ({ cover_image_url="https://in.bmscdn.com/discovery-catalog/events/
         </div>
     )
 }
-
 export default Card
